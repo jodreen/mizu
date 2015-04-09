@@ -17,6 +17,7 @@
 		06BDD5E51ABA8F04006BBA7E /* DOTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BDD5E41ABA8F04006BBA7E /* DOTabBarController.m */; };
 		06BDD5E81ABA8FBE006BBA7E /* DOHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BDD5E71ABA8FBE006BBA7E /* DOHomeViewController.m */; };
 		06BDD5EB1ABA8FE2006BBA7E /* DOProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BDD5EA1ABA8FE2006BBA7E /* DOProfileViewController.m */; };
+		06FAD97B1AD645AF000EBBEF /* UIView+DOExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FAD97A1AD645AF000EBBEF /* UIView+DOExtensions.m */; };
 		4C4D64479E9601238ADD2BDF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B080DB2514E411C1100EC7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,10 @@
 		06BDD5E71ABA8FBE006BBA7E /* DOHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOHomeViewController.m; sourceTree = "<group>"; };
 		06BDD5E91ABA8FE2006BBA7E /* DOProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOProfileViewController.h; sourceTree = "<group>"; };
 		06BDD5EA1ABA8FE2006BBA7E /* DOProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOProfileViewController.m; sourceTree = "<group>"; };
+		06FAD9791AD645AF000EBBEF /* UIView+DOExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DOExtensions.h"; sourceTree = "<group>"; };
+		06FAD97A1AD645AF000EBBEF /* UIView+DOExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DOExtensions.m"; sourceTree = "<group>"; };
+		06FAD97E1AD646A9000EBBEF /* UIExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIExtensions.h; path = ../UIExtensions.h; sourceTree = "<group>"; };
+		06FAD97F1AD64B31000EBBEF /* DOProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOProperties.h; sourceTree = "<group>"; };
 		071480149252DB53D0BF2C58 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		51FA068661E9AFE8335350D2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +104,10 @@
 		06BDD5B61ABA898C006BBA7E /* DrOttr */ = {
 			isa = PBXGroup;
 			children = (
+				06FAD97E1AD646A9000EBBEF /* UIExtensions.h */,
+				06FAD9791AD645AF000EBBEF /* UIView+DOExtensions.h */,
+				06FAD97F1AD64B31000EBBEF /* DOProperties.h */,
+				06FAD97A1AD645AF000EBBEF /* UIView+DOExtensions.m */,
 				06BDD5E31ABA8F04006BBA7E /* DOTabBarController.h */,
 				06BDD5E41ABA8F04006BBA7E /* DOTabBarController.m */,
 				06BDD5E61ABA8FBE006BBA7E /* DOHomeViewController.h */,
@@ -295,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06FAD97B1AD645AF000EBBEF /* UIView+DOExtensions.m in Sources */,
 				06BDD5BD1ABA898C006BBA7E /* AppDelegate.m in Sources */,
 				063F16D91ACD03C2005F9654 /* DOProfileView.m in Sources */,
 				06BDD5BA1ABA898C006BBA7E /* main.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DORootViewController.h
 //  DrOttr
 //
 //  Created by Jordeen Chang on 3/18/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface DORootViewController : UIViewController
 
 @end
-

@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+
+pod 'Masonry'
+pod 'AFNetworking', '~> 2.0'
+pod 'FontAwesomeKit', '~> 2.1.0'
+pod 'UIImage+BlurredFrame'
+pod 'Facebook-iOS-SDK'
+pod 'UICKeyChainStore'
+pod 'Mantle'

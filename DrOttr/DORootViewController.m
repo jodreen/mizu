@@ -8,6 +8,8 @@
 
 #import "DORootViewController.h"
 #import "DOTabBarController.h"
+#import "LoginViewController.h"
+#import "UIExtensions.h"
 
 @interface DORootViewController ()
 
@@ -18,10 +20,31 @@
 @implementation DORootViewController
 
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIViewController *tabBarController = [[DOTabBarController alloc] init];
-    [self showViewController:tabBarController];
+    UIViewController *launchingViewController = nil;
+    if (![PFUser currentUser]) {
+        launchingViewController = [self newLoginViewController];
+    } else {
+        launchingViewController = [self newInitialViewController];
+    }
+    
+    [self showViewController:launchingViewController];
+}
+
+- (UIViewController *)newInitialViewController {
+    return [[DOTabBarController alloc] init];
+
+}
+
+- (UIViewController *)newLoginViewController {
+    return [[LoginViewController alloc] init];
+}
+
+- (void)pushNewTabBarControllerFromLogin:(LoginViewController *)oldVC {
+    UIViewController *launchingViewController = [self newInitialViewController];
+    [self addChildViewController:launchingViewController];
 }
 
 - (void)showViewController:(UIViewController *)initialViewController {

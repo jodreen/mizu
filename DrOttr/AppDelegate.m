@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "DORootViewController.h"
+//#import "LoginViewController.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -22,8 +24,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    
+    //Parse integration
+    [Parse setApplicationId:@"CaaabJFvADd2dauVErCW7rVGg3djQ8dMJLhMtFBm"
+                  clientKey:@"tYTeesOOnHt3T0SJfcBBhNrgvVnedOVMl3B42AFa"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    // Set default ACLs
+    PFACL *defaultACL = [PFACL ACL];
+    [defaultACL setPublicReadAccess:YES];
+    [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
     
     //clear navbar
     [[UINavigationBar appearance] setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
@@ -36,7 +46,10 @@
     
     //white navigation items
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
     self.window.rootViewController = [[DORootViewController alloc] init];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

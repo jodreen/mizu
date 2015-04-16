@@ -11,3 +11,6 @@
 #import "Masonry.h"
 #import "UIView+DOExtensions.h"
 #import "DOProperties.h"
+#import <Parse/Parse.h>
+#import <ParseUI/ParseUI.h>
+

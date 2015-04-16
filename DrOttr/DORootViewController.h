@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LoginViewController.h"
 
 @interface DORootViewController : UIViewController
+
+- (void)pushNewTabBarControllerFromLogin:(LoginViewController *)oldVC;
 
 @end

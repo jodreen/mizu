@@ -15,5 +15,4 @@
 // plus means class method vs minus is instance method
 + (NSNumber *) do_stylePadding;
 
-
 @end

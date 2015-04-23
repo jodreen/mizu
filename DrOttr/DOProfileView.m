@@ -23,7 +23,7 @@
     if (self) {
         [self createSubviews];
         [self setNeedsUpdateConstraints];
-        self.backgroundColor = [UIColor blueColor];
+        self.backgroundColor = [UIColor mizuBlue];
     }
     return self;
 }

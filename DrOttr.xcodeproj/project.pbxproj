@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		063089791ADF70DA00DB0A00 /* UIColor+DOColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 063089781ADF70DA00DB0A00 /* UIColor+DOColor.m */; };
 		063F16D61ACD03B1005F9654 /* DOHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 063F16D51ACD03B1005F9654 /* DOHomeView.m */; };
 		063F16D91ACD03C2005F9654 /* DOProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 063F16D81ACD03C2005F9654 /* DOProfileView.m */; };
 		06BDD5BA1ABA898C006BBA7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BDD5B91ABA898C006BBA7E /* main.m */; };
@@ -33,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		00B080DB2514E411C1100EC7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		063089771ADF70DA00DB0A00 /* UIColor+DOColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DOColor.h"; sourceTree = "<group>"; };
+		063089781ADF70DA00DB0A00 /* UIColor+DOColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DOColor.m"; sourceTree = "<group>"; };
 		063F16D41ACD03B1005F9654 /* DOHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOHomeView.h; sourceTree = "<group>"; };
 		063F16D51ACD03B1005F9654 /* DOHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOHomeView.m; sourceTree = "<group>"; };
 		063F16D71ACD03C2005F9654 /* DOProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOProfileView.h; sourceTree = "<group>"; };
@@ -106,6 +109,8 @@
 			children = (
 				06FAD97E1AD646A9000EBBEF /* UIExtensions.h */,
 				06FAD9791AD645AF000EBBEF /* UIView+DOExtensions.h */,
+				063089771ADF70DA00DB0A00 /* UIColor+DOColor.h */,
+				063089781ADF70DA00DB0A00 /* UIColor+DOColor.m */,
 				06FAD97F1AD64B31000EBBEF /* DOProperties.h */,
 				06FAD97A1AD645AF000EBBEF /* UIView+DOExtensions.m */,
 				06BDD5E31ABA8F04006BBA7E /* DOTabBarController.h */,
@@ -312,6 +317,7 @@
 				063F16D61ACD03B1005F9654 /* DOHomeView.m in Sources */,
 				06BDD5E51ABA8F04006BBA7E /* DOTabBarController.m in Sources */,
 				06BDD5DF1ABA8C2F006BBA7E /* DORootViewController.m in Sources */,
+				063089791ADF70DA00DB0A00 /* UIColor+DOColor.m in Sources */,
 				06BDD5EB1ABA8FE2006BBA7E /* DOProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

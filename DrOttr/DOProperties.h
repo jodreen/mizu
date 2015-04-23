@@ -9,4 +9,3 @@
 #define DrOttr_DOProperties_h
 
 static const CGFloat standardMargin = 10;
-

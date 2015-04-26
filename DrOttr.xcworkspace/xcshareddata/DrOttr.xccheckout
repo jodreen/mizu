@@ -5,15 +5,13 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>0F7A821A-04CE-4FDB-838A-2E9B5788D0DC</string>
+	<string>B468D8D6-024B-4BAE-BF71-DAA485795BCD</string>
 	<key>IDESourceControlProjectName</key>
 	<string>DrOttr</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>1BEC8073F24F7AA6E41269976746E052138E3245</key>
-		<string>https://github.com/jodreen/mizu.git</string>
-		<key>D5A99FA35B49DF1D9B83756C87F6C6196A500F64</key>
-		<string>https://github.com/ParsePlatform/LoginAndSignUpTutorial.git</string>
+		<string>http://github.com/jodreen/mizu.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>DrOttr.xcworkspace</string>
@@ -21,11 +19,9 @@
 	<dict>
 		<key>1BEC8073F24F7AA6E41269976746E052138E3245</key>
 		<string>..</string>
-		<key>D5A99FA35B49DF1D9B83756C87F6C6196A500F64</key>
-		<string>../../LoginAndSignUpTutorial</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/jodreen/mizu.git</string>
+	<string>http://github.com/jodreen/mizu.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -36,17 +32,9 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D5A99FA35B49DF1D9B83756C87F6C6196A500F64</string>
-			<key>IDESourceControlWCCName</key>
-			<string>LoginAndSignUpTutorial</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>1BEC8073F24F7AA6E41269976746E052138E3245</string>
 			<key>IDESourceControlWCCName</key>
-			<string>mizu</string>
+			<string>DrOttr</string>
 		</dict>
 	</array>
 </dict>

@@ -29,7 +29,6 @@
     } else {
         launchingViewController = [self newInitialViewController];
     }
-    
     [self showViewController:launchingViewController];
 }
 
@@ -44,13 +43,41 @@
 
 - (void)pushNewTabBarControllerFromLogin:(LoginViewController *)oldVC {
     UIViewController *launchingViewController = [self newInitialViewController];
-    [self addChildViewController:launchingViewController];
+    [self cycleFromViewController:oldVC toViewController:launchingViewController];
+}
+
+- (void)pushNewLoginControllerFromTab:(DOTabBarController *)oldVC {
+    UIViewController *launchingViewController = [self newLoginViewController];
+    [self cycleFromViewController:oldVC toViewController:launchingViewController];
+}
+
+- (void)cycleFromViewController:(UIViewController*)oldVC
+               toViewController:(UIViewController*)newVC {
+    [oldVC willMoveToParentViewController:nil];
+    [self addChildViewController:newVC];
+
+    newVC.view.frame = newVC.view.frame;
+    CGRect endFrame = oldVC.view.frame;
+
+    [self transitionFromViewController: oldVC
+                      toViewController: newVC
+                              duration: 0.1
+                               options:0
+                            animations:^{
+                                newVC.view.frame = oldVC.view.frame;
+                                oldVC.view.frame = endFrame;
+                            }
+                            completion:^(BOOL finished) {
+                                [oldVC removeFromParentViewController];
+                                [newVC didMoveToParentViewController:self];
+                            }];
 }
 
 - (void)showViewController:(UIViewController *)initialViewController {
     [self addChildViewController:initialViewController];
-    [self.view addSubview:initialViewController.view];
     self.currentViewController = initialViewController;
+    [self.view addSubview:initialViewController.view];
+
 }
 
 - (void)didReceiveMemoryWarning {

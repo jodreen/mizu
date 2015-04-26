@@ -82,9 +82,10 @@
 }
 
 - (void) logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser * )user {
-    [self dismissViewControllerAnimated:YES completion:NULL];
     DORootViewController *rootViewController = (DORootViewController *)self.parentViewController;
+//    [self dismissViewControllerAnimated:YES completion:NULL];
     [rootViewController pushNewTabBarControllerFromLogin:self];
+
     NSLog(@"Logged in!");
 }
 

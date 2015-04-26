@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "DOHomeViewController.h"
 #import "DOProfileViewController.h"
+#import "UIExtensions.h"
 
 @interface DOTabBarController ()
 
@@ -29,7 +30,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tabBar.tintColor = [UIColor blueColor];
+    self.tabBar.tintColor = [UIColor mizuBlue];
     self.tabBar.translucent = NO;
     
     
@@ -52,7 +53,12 @@
         for (NSInteger i = 0; i < [rootViewControllers count]; i++) {
             UINavigationController *navigationController = [[UINavigationController alloc] init];
             navigationController.delegate = self;
-            navigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:titles[i] image:NULL tag:i];
+            UITabBarItem *tabBar = [[UITabBarItem alloc] initWithTitle:titles[i] image:NULL tag:i];
+            [tabBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                                                    [UIFont systemFontOfSize:20.0f], NSFontAttributeName,
+                                            nil] forState:UIControlStateNormal];
+            [tabBar setTitlePositionAdjustment:UIOffsetMake(0, -10)];
+            navigationController.tabBarItem = tabBar;
             navigationController.viewControllers = @[ rootViewControllers[i] ];
             [viewControllers addObject:navigationController];
         }
